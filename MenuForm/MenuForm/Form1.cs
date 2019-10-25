@@ -14,7 +14,7 @@ namespace MenuForm
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent(); // pode copiar mas não faz igualzinho
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
