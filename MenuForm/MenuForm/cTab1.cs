@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MenuForm
 {
-    public class cTab1
+    public class cTab1 // na verdade deveria chamar "cTab2" mas ok
     {
         private MySqlConnection oMySqlConnection;
         private MySqlDataAdapter oMySqlDataAdapter;
