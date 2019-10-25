@@ -18,7 +18,7 @@ namespace MenuForm
             // parametros para conexao para o banco MYSQL
             string oRetorno =
                 " Persist Security Info=False;" +
-                "server =10.39.46.41; " +  //
+                "server =10.39.46.41; " +  // se precisa mudar esse IP, ele tá em todas as classes
                 "database =events; uid = events; pwd = events@2019";
             return oRetorno;
         }
@@ -30,7 +30,7 @@ namespace MenuForm
             {
                 oMySqlConnection = new MySqlConnection(chave_conexao());
                 oMySqlConnection.Open();
-                oMySqlDataAdapter = new MySqlDataAdapter("select * from tbl_eventos", oMySqlConnection);
+                oMySqlDataAdapter = new MySqlDataAdapter("select * from tbl_eventos", oMySqlConnection); // possivel adicionar filtro aqui
                 oMySqlDataAdapter.Fill(oListRetorno);
                 oMySqlConnection.Close();
             }
